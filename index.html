@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>web Forms</title>
+<style type="text/css">
+form{
+	background-color:#DEDCDE;
+	width:500px;
+	padding:10px 5px 5px 5px;
+	border:1px black solid;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:14px;
+	}
+.tl{
+	text-align:right;
+	width:100px;
+	float:left;
+	margin-right:25px;
+	padding:5px;
+}
+.leftcolum{
+	width:245px;
+	float:left;
+	text-align:right;
+	
+}
+.rightcolum{
+	width:245px;
+	float:right;
+	
+	text-align:left;
+}
+</style>
+</head>
+
+<body>
+<div>
+<form method="post" action="index.html">
+   <fieldset><legend>Give us Feedback</legend>
+   <div class="leftcolum">
+   <p class="tl">Full Name:</p>
+    <br />
+   <p>
+    <br />
+   </p>
+   <p class="tl">Year:</p>   
+   <p class="tl">Actities:</p>
+   <p class="tl">Quarter:<br />
+   </p>
+   <p>
+    <br /> 
+   </p>
+   <p class="tl">Comments:</p>
+   </div>
+   <div class="rightcolum">
+   <p>
+    <input type="text" size="20" name="firstname" /><br />
+   </p>
+   <p>
+    <input type="radio" name="year" value="freshman" />Freshman<br />
+    <input type="radio" name="year" value="sophomore" />Sophomore<br />
+    <input type="radio" name="year" value="junior" />Junior<br />
+    <input type="radio" name="year" value="senior" />Senior
+   </p>
+   <p>
+    <input type="checkbox" name="activities" value="sports" />Sports<br />
+    <input type="checkbox" name="activities" value="music" />Music<br />
+    <input type="checkbox" name="activities" value="theater" />Theater<br />
+    <input type="checkbox" name="activities" value="other" />Other
+   </p>
+   <p>
+    <select name="Quarter" >
+     <option value="Spring" >Spring</option>
+     <option value="Summer">Summer</option>
+     <option value="Fall" selected="selected">Fall</option>
+     <option value="Winter">Winter</option>
+    </select>
+   </p>
+   <textarea name="more" rows="6" cols="32">Enter your feedback here.</textarea>
+   </div>
+   </fieldset>
+  </form>
+ </div>
+</body>
+</html>
